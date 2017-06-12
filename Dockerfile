@@ -8,5 +8,7 @@ WORKDIR /build
 
 RUN dotnet restore
 
+RUN npm config set cache-min 9999999
+
 RUN npm install
 
