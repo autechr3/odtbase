@@ -1,4 +1,4 @@
-FROM josephbulger/dotnetnode:1.1.0-sdk-projectjson-6.5.0-node
+FROM autechr3/dotnetnode:dotnet-2.0-node-6.5
 
 RUN apt-get update && apt-get install -y --no-install-recommends xsltproc
 
