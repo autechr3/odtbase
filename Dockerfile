@@ -8,5 +8,11 @@ WORKDIR /build
 
 RUN dotnet restore
 
+RUN npm install -g local-npm
+
+RUN local-npm
+
+RUN npm set registry http://127.0.0.1:5080
+
 RUN npm install
 
