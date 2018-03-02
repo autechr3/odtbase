@@ -1,6 +1,6 @@
 FROM autechr3/dotnetnode:dotnet-2.0-node-6.5
 
-RUN apt-get update && apt-get install -y --no-install-recommends xsltproc
+RUN apt-get update && apt-get install -y --no-install-recommends build-essential xsltproc
 
 COPY . /build
 
